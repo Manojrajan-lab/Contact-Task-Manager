@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact & Task Manager</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar">
+    <h2>My Project</h2>
+    <ul>
+      <li>Home</li>
+      <li>Contact</li>
+      <li>Tasks</li>
+    </ul>
+  </nav>
+
+  <main class="container">
+
+    <section class="card">
+      <h3>Contact Form</h3>
+
+      <form id="contactForm">
+        <input type="text" id="name" placeholder="Your Name">
+        <input type="email" id="email" placeholder="Your Email">
+
+        <div class="password-box">
+          <input type="password" id="password" placeholder="Password">
+          <span id="togglePassword">👁</span>
+        </div>
+
+        <ul class="password-rules">
+          <li id="lengthRule">❌ Minimum 8 characters</li>
+          <li id="specialRule">❌ At least 1 special character</li>
+        </ul>
+
+        <textarea id="message" placeholder="Your Message"></textarea>
+        <button type="submit">Submit</button>
+      </form>
+
+      <p id="formError"></p>
+    </section>
+
+    <section class="card">
+      <h3>To-Do List</h3>
+      <div class="todo">
+        <input type="text" id="taskInput" placeholder="New task">
+        <button id="addTaskBtn">Add</button>
+      </div>
+      <ul id="taskList"></ul>
+    </section>
+
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
